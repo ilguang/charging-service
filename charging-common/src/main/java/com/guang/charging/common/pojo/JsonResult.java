@@ -1,6 +1,7 @@
-package com.guang.charging.order.common;
+package com.guang.charging.common.pojo;
 
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
@@ -27,5 +28,17 @@ public class JsonResult<T> {
      * 响应体（具体的数据）
      */
     T data;
+
+    public static JsonResult ok(Object data, String msg) {
+        JsonResult result = new JsonResult<>();
+        result.setCode(2000);
+        result.setData(data);
+        result.setMessage(msg);
+        return result;
+    }
+
+    public static JsonResult ok(Object data) {
+        return ok(data, null);
+    }
 
 }

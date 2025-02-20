@@ -20,6 +20,7 @@
         <module>charging-order</module>
         <module>charging-user</module>
         <module>charging-device</module>
+        <module>charging-common</module>
     </modules>
 
     <properties>
@@ -31,17 +32,7 @@
 
     <dependencies>
 
-        <!--lombok-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
-            <version>4.3.0</version>
-        </dependency>
 
     </dependencies>
 
@@ -49,10 +40,33 @@
 
         <dependencies>
 
+            <!--spring boot-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter</artifactId>
                 <version>${spring-boot.version}</version>
+            </dependency>
+
+
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.24</version>
+            </dependency>
+
+            <!--生成API文档-->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+                <version>4.3.0</version>
+            </dependency>
+
+            <!--自定义公共模块-->
+            <dependency>
+                <groupId>com.guang</groupId>
+                <artifactId>charging-common</artifactId>
+                <version>1.0</version>
             </dependency>
 
         </dependencies>
