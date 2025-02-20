@@ -16,4 +16,10 @@ public class OrderAddParam {
     @ApiModelProperty(value = "用户id")
     Integer userId;
 
+    @ApiModelProperty(value = "充电枪id")
+    Integer gunId;
+
+    @ApiModelProperty(value = "充电桩id")
+    Integer pileId;
+
 }
