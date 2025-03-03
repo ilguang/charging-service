@@ -1,4 +1,4 @@
-package com.guang.charging.user.pojo.vo;
+package com.guang.charging.order.pojo.vo;
 
 import lombok.AccessLevel;
 import lombok.Data;

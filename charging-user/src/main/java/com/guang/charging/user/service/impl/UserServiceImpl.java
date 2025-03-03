@@ -2,7 +2,6 @@ package com.guang.charging.user.service.impl;
 
 import com.guang.charging.user.pojo.vo.UserInfoVO;
 import com.guang.charging.user.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 /**
