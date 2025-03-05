@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 @Configuration
 @EnableSwagger2WebMvc
 //理解区别 @Component 让Spring容器帮我们创建和管理bean
-public class Knife4jConfiguration {
+public class Knife4jConfig {
 
     /**
      * 【重要】【重要】【重要】 指定Controller包路径 类路径
@@ -62,8 +62,8 @@ public class Knife4jConfiguration {
     //@Autowired
     //private OpenApiExtensionResolver openApiExtensionResolver;
 
-    public Knife4jConfiguration() {
-        log.debug("创建配置类对象：Knife4jConfiguration");
+    public Knife4jConfig() {
+        log.debug("创建配置类对象：Knife4jConfig");
     }
 
     @Bean

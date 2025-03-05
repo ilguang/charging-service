@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
  * @date 2025/2/27 - 20:49
  */
 @Configuration
-public class RestTemplateConfiguration {
+public class RestTemplateConfig {
 
     @Bean
     public RestTemplate restTemplate() {
