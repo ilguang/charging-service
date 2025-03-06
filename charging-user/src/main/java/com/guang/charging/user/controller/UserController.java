@@ -33,6 +33,8 @@ public class UserController {
     @GetMapping("/info/{userId}")
     public JsonResult getUserById(@PathVariable("userId") Integer userId) {
 
+        log.info("获取用户信息，userId:{}", userId);
+
         // 获取用户信息
         UserInfoVO userInfo = userService.queryUserById(userId);
 
@@ -40,6 +42,8 @@ public class UserController {
 //        JsonResult<UserInfoVO> result = new JsonResult<>();
 //        result.setCode(2000);
 //        result.setData(userInfo);
+
+        log.info("用户信息，userInfo:{}", userInfo);
 
         return JsonResult.ok(userInfo);
     }
