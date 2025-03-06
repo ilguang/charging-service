@@ -1,7 +1,7 @@
 package com.guang.charging.user.controller;
 
 import com.guang.charging.common.pojo.JsonResult;
-import com.guang.charging.user.pojo.vo.UserInfoVO;
+import com.guang.charging.common.pojo.vo.UserInfoVO;
 import com.guang.charging.user.service.UserService;
 import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;

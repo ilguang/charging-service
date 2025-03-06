@@ -1,4 +1,4 @@
-package com.guang.charging.user.pojo.vo;
+package com.guang.charging.common.pojo.vo;
 
 import lombok.AccessLevel;
 import lombok.Data;
@@ -6,15 +6,15 @@ import lombok.experimental.FieldDefaults;
 
 /**
  * @author guang
- * @date 2025/2/20 - 23:03
+ * @date 2025/3/6 - 22:21
  */
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class UserInfoVO {
+public class StationInfoVO {
 
     /**
-     * 车辆id（暂定一个用户绑定一辆车）
+     * 场站Id
      */
-    Integer carId;
+    Integer stationId;
 
 }

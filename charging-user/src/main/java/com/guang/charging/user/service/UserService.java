@@ -1,6 +1,6 @@
 package com.guang.charging.user.service;
 
-import com.guang.charging.user.pojo.vo.UserInfoVO;
+import com.guang.charging.common.pojo.vo.UserInfoVO;
 
 /**
  * 用户服务

@@ -1,6 +1,6 @@
 package com.guang.charging.user.service.impl;
 
-import com.guang.charging.user.pojo.vo.UserInfoVO;
+import com.guang.charging.common.pojo.vo.UserInfoVO;
 import com.guang.charging.user.service.UserService;
 import org.springframework.stereotype.Service;
 

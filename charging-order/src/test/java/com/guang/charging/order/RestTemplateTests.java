@@ -2,7 +2,7 @@ package com.guang.charging.order;
 
 import com.guang.charging.common.pojo.JsonResult;
 import com.guang.charging.order.pojo.param.OrderAddParam;
-import com.guang.charging.order.pojo.vo.UserInfoVO;
+import com.guang.charging.common.pojo.vo.UserInfoVO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -62,7 +62,7 @@ public class RestTemplateTests {
                  * ClassCastException（类型转换异常）:
                  * class java.util.LinkedHashMap
                  * cannot be cast to class
-                 * com.guang.charging.order.pojo.vo.UserInfoVO
+                 * com.guang.charging.common.pojo.vo.UserInfoVO
                  * 从这个异常可以知道，data本身是Json，实际是 排序的k-v LinkedHashMap
                  */
                 UserInfoVO userInfoV = (UserInfoVO) data;

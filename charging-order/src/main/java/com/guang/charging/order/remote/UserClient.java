@@ -1,9 +1,8 @@
 package com.guang.charging.order.remote;
 
 import com.guang.charging.common.pojo.JsonResult;
-import com.guang.charging.order.pojo.vo.UserInfoVO;
+import com.guang.charging.common.pojo.vo.UserInfoVO;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
