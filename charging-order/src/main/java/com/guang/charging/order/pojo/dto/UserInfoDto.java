@@ -8,4 +8,10 @@ package com.guang.charging.order.pojo.dto;
  * @date 2025/2/20 - 13:34
  */
 public class UserInfoDto {
+
+    /**
+     * 车辆id（暂定一个用户绑定一辆车）
+     */
+    Integer carId;
+
 }

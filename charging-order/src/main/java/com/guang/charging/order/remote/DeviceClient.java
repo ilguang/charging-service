@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 public interface DeviceClient {
 
     @GetMapping("/device/station/info/{gunId}")
-    JsonResult getStationInfo(@PathVariable("gunId") Integer gunId);
+    JsonResult<StationInfoVO> getStationInfo(@PathVariable("gunId") Integer gunId);
 
     @PostMapping("/device/station/gun/status/update")
-    JsonResult updateGunStatus(@RequestBody GunStatusUpdateParam param);
+    JsonResult<Boolean> updateGunStatus(@RequestBody GunStatusUpdateParam param);
 
 }

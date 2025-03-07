@@ -14,4 +14,10 @@ import lombok.experimental.FieldDefaults;
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class StationInfoDto {
+
+    /**
+     * 场站Id
+     */
+    Integer stationId;
+
 }

@@ -45,6 +45,8 @@ public class OrderController {
     @PostMapping("/create")
     public JsonResult createOrder(OrderAddParam orderAddParam) {
 
+        log.info("创建订单：{}", orderAddParam);
+
         // 创建订单
         String orderNo = orderService.createOrder(orderAddParam);
 
@@ -53,6 +55,8 @@ public class OrderController {
         result.setCode(2000);
         result.setMessage("创建订单成功！");
         result.setData(orderNo);
+
+        log.info("订单号：{}", orderNo);
 
         return result;
     }
